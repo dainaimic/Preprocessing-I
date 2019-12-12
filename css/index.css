@@ -127,6 +127,12 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+@mixin : border1 {
+  border: 0.4rem solid black;
+}
+@mixin h1,h2 {
+  font-weight: bold;
+}
 * {
   box-sizing: border-box;
 }
@@ -146,12 +152,13 @@ header ul {
   width: 34%;
   overflow: hidden;
   background-color: turquoise;
-  border-radius: 10px;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
 }
-li {
+header li {
   float: left;
 }
-li a {
+header li a {
   display: block;
   color: black;
   text-align: center;
@@ -159,80 +166,116 @@ li a {
   text-decoration: none;
 }
 .container-img {
-  background-color: orange;
+  background-color: turquoise;
   width: 100%;
   height: 250px;
   margin-top: 2%;
   margin-bottom: 5%;
+  border-radius: 1rem;
 }
 .container-img .back-img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 1rem;
+}
+@mixin border1 {
+  border: 0.4rem solid black;
+}
+.background {
+  background-color: grey;
+  border-radius: 1rem;
+  padding-bottom: 380px;
+  border: 1rem solid black;
 }
 .container-img1 {
   background-color: turquoise;
   width: 80%;
-  height: 235px;
-  margin-left: 9%;
-  border-radius: 10px;
+  height: 265px;
+  margin-left: 10%;
+  border-radius: 1rem;
+  margin-bottom: 30%;
+  position: relative;
+  top: 20rem;
+  @mixin border1();
 }
 .container-img1 .introimg {
-  width: 60%;
-  border-radius: 10px;
+  width: 55%;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 14rem;
+  left: 13.5rem;
+  border: 0.4rem solid black;
 }
 .container-img1 .skillsimg {
-  width: 62%;
-  border-radius: 10px;
+  width: 54%;
+  border-radius: 1rem;
   position: relative;
-  left: 38%;
+  left: 13.5rem;
+  bottom: 17rem;
+  border: 0.4rem solid black;
 }
 .container-img1 .workhimg {
-  width: 62%;
-  border-radius: 10px;
-}
-.info-container {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  line-height: 21px;
-}
-.info-container .introtext {
-  text-align: right;
-  width: 88.5%;
-  padding-left: %;
+  width: 54%;
+  border-radius: 1rem;
   position: relative;
-  bottom: 215px;
-  right: 20px;
+  left: 13.5rem;
+  bottom: 17rem;
+  border: 0.4rem solid black;
 }
-.info-container .introtext h1 {
-  font-size: 20px;
-}
-.info-container .introtext h3 {
-  font-size: 13px;
-}
-.info-container .introtext p {
-  padding-left: 70%;
-}
-.info-container .skills-cont {
-  width: 88.5%;
+.introtext {
+  width: 70%;
+  line-height: 1.4rem;
+  text-align: center;
   position: relative;
-  left: 12%;
-  bottom: 220px;
-  padding-bottom: 18%;
+  bottom: 116rem;
+  left: 11.5rem;
 }
-.info-container .intro {
-  text-align: right;
-  width: 88.5%;
-  padding-left: 60%;
+.introtext h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.3rem;
+}
+.introtext h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.skills-cont {
+  text-align: center;
   position: relative;
-  bottom: 215px;
-  right: 20px;
+  bottom: 86rem;
 }
-.info-container .intro h1 {
-  font-size: 20px;
+.skills-cont h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.3rem;
 }
-.info-container .intro h3 {
-  font-size: 13px;
+.skills-cont li {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+.work-cont {
+  text-align: center;
+  position: relative;
+  bottom: 58rem;
+}
+.work-cont h2 {
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+.work-cont h3 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.contact {
+  background-color: turquoise;
+  text-align: center;
+  position: relative;
+  bottom: 52rem;
+  border: 0.4rem solid black;
+  width: 30%;
+  border-radius: 1rem;
+  left: 27rem;
+}
+.contact h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }

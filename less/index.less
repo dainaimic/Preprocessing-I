@@ -8,9 +8,8 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
+small, strike, strong, sub, sup, tt, var, 
+dl, dt, dd, ol, ul, li,0
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -49,11 +48,186 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@container-bac-color: turquoise;
+@h2font: 'yrsa', monospace;
+@h4font: 'noto sans', sans-serif;
+
+
 * {
     box-sizing: border-box;
 }
 
+
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+.position{
+	position: relative;
+}
+
+.container {
+	margin:2% 10%;
+	max-width: 100%;
+	height:300px;
+
+	header nav{
+		min-width: 400px;
+		display: flex;
+		flex-direction: row;
+		background-color: @container-bac-color;
+		justify-content: space-evenly;
+		width: 100%;
+		height: auto;
+		margin-bottom: 2%;
+		padding: 2%;
+		border-radius: 1rem;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+		
+
+
+		a{
+			font-size: 1.2rem;
+			text-decoration: none;
+
+		}
+
+	}
+	
+	.beg-container{
+		min-width: 400px;
+		background-color: @container-bac-color;
+		padding-bottom: 0.5rem;
+		border-radius: 1rem;
+		width: 30%;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+		img {
+			width: 100%;
+			border-radius: 1rem 1rem 0 0;
+		}
+
+		
+		.introtext{
+			display:flex;
+			flex-direction:column;
+			margin-left:1.5rem;
+			width: 85%;
+			border-radius: 0.5rem;
+			
+
+			h2{
+				font-size: 2rem;
+				margin-bottom: 0.5%;
+				font-family: @h2font;
+				color: white;
+			}
+			h3{
+				font-size: 1.3rem;
+				margin-left: 0.4rem;
+			}
+			p{
+				margin-top: 4%;
+				margin-left: 0.6rem;
+				line-height: 1.2rem;
+			}
+			button{
+				margin-top: 3%;
+				width: 30%;
+			}
+		}
+
+	}
+	.info-container {
+		min-width: 400px;
+		margin-left: 28rem;
+		.position();
+		bottom: 4rem;
+		
+		
+
+		h2{
+			font-size: 2rem;
+			margin-bottom: 1%;
+			font-family: @h2font;
+			background-color: @container-bac-color;
+			width: 15%;
+			border-radius: 0.5rem;
+		
+			color: white;
+		}
+		
+
+		
+	}
+	.cont-table{
+		min-width: 400px;
+		margin: 1.8rem 0;
+		font-size: 1.2rem;
+		min-width: 400px;
+		line-height: 1.6rem;
+		border-radius: 0.5rem 0.5rem 0 0;
+		overflow: hidden;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+		
+		td {
+			border-bottom: 0.1rem solid lightgrey;
+		}
+	}
+
+	.sec-container {
+		min-width: 400px;
+		margin-left: 28rem;
+		position: absolute;
+		bottom: 10.8rem;
+		
+		
+
+		h2 {
+			font-size: 2rem;
+			margin-bottom: 1%;
+			font-family: @h2font;
+			background-color: @container-bac-color;
+			width: 26%;
+			border-radius: 0.5rem;
+		
+			color: white;
+		}
+
+	
+	
+	
+	}
+	.cont-table2 {
+		.cont-table();
+		min-width: 400px;
+		line-height: 3rem;
+
+	
+
+		thead tr {
+			background-color: @container-bac-color;
+			color: white;
+			text-align: left;
+			font-weight: bold;
+		}
+		th,
+		td {
+		  padding: 1.2rem 1.5rem;
+		}
+	}
+	.contact {
+		line-height: 1.7rem;
+		border: 0.2rem solid black;
+		width: 20%;
+		text-align: center;
+		overflow:hidden;
+		background-color: @container-bac-color;
+		border-radius: 0.5rem;
+		.position();
+		left: 60rem;
+		bottom: 13.5rem;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	}
+		  
+}

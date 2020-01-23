@@ -41,13 +41,17 @@ sub,
 sup,
 tt,
 var,
+b,
+u,
+i,
+center,
 dl,
 dt,
 dd,
 ol,
 ul,
 li,
-0 fieldset,
+fieldset,
 form,
 label,
 legend,
@@ -220,13 +224,13 @@ body {
 .container .cont-table td {
   border-bottom: 0.1rem solid lightgrey;
 }
-.container .sec-container {
+.container .sec-contai3ner {
   min-width: 400px;
   margin-left: 28rem;
   position: absolute;
   bottom: 10.8rem;
 }
-.container .sec-container h2 {
+.container .sec-contai3ner h2 {
   font-size: 2rem;
   margin-bottom: 1%;
   font-family: 'yrsa', monospace;
@@ -236,17 +240,8 @@ body {
   color: white;
 }
 .container .cont-table2 {
-  margin: 1.8rem 0;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  border-radius: 0.5rem 0.5rem 0 0;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   min-width: 400px;
   line-height: 3rem;
-}
-.container .cont-table2 td {
-  border-bottom: 0.1rem solid lightgrey;
 }
 .container .cont-table2 thead tr {
   background-color: turquoise;
